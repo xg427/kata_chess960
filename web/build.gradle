@@ -1,0 +1,5 @@
+dependencies {
+	implementation (
+		'org.apache.wicket:wicket:8.2.+'
+	)
+}

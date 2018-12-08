@@ -1,0 +1,6 @@
+dependencies {
+	implementation (
+		'org.eclipse.collections:eclipse-collections-api:9.2.0',
+		'org.eclipse.collections:eclipse-collections:9.2.0'
+	)
+}
