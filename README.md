@@ -20,7 +20,7 @@ The most common characters to refer to single pieces of a chess game are:
 * **B**: Bishop
 * **P**: Pawn (not needed here)
 
-##Examples
+## Examples
 Valid results could look like one of these examples here:
 * "R N B Q K B N R" (which is also the starting position of "normal" chess)
 * "R Q B N K R N B"
