@@ -12,6 +12,8 @@ import com.github.sourcefranke.chess960.core.ChessPiece;
  * @author sourcefranke
  */
 public class BishopsDifferentColorRule implements Rule {
+	
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see {@link Rule#validate(List)}

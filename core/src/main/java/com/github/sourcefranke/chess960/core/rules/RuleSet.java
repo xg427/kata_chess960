@@ -12,6 +12,8 @@ import com.github.sourcefranke.chess960.core.ChessPiece;
  */
 public class RuleSet implements Rule {
 	
+	private static final long serialVersionUID = 1L;
+	
 	private List<Rule> rules;
 
 	/**

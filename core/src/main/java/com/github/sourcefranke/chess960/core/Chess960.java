@@ -6,6 +6,7 @@ import static com.github.sourcefranke.chess960.core.ChessPiece.KNIGHT;
 import static com.github.sourcefranke.chess960.core.ChessPiece.QUEEN;
 import static com.github.sourcefranke.chess960.core.ChessPiece.ROOK;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -19,8 +20,10 @@ import com.github.sourcefranke.chess960.core.rules.RuleSet;
  * 
  * @author sourcefranke
  */
-public class Chess960 {
+public class Chess960 implements Serializable {
 	
+	private static final long serialVersionUID = 1L;
+
 	private RuleSet ruleSet;
 
 	private List<ChessPiece> setOfPieces;

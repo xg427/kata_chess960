@@ -12,6 +12,8 @@ import static com.github.sourcefranke.chess960.core.ChessPiece.*;
  * @author sourcefranke
  */
 public class KingBetweenRooksRule implements Rule {
+	
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see {@link Rule#validate(List)}

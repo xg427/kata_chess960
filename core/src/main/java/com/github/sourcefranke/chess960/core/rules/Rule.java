@@ -1,5 +1,6 @@
 package com.github.sourcefranke.chess960.core.rules;
 
+import java.io.Serializable;
 import java.util.List;
 
 import com.github.sourcefranke.chess960.core.ChessPiece;
@@ -9,7 +10,7 @@ import com.github.sourcefranke.chess960.core.ChessPiece;
  * 
  * @author sourcefranke
  */
-public interface Rule {
+public interface Rule extends Serializable {
 
 	/**
 	 * @param position current position to be tested for complying the given restriction
