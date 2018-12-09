@@ -28,7 +28,8 @@ Valid results could look like one of these examples here:
 
 ## Own solution
 My own solution for the kata explained here you can find in the subproject called "core".
-The purpose of the subproject "web" is to display the resulting starting positions within a web browser later.
+
+It is open for adding more rules or removing one of the existing rules easily.
 
 ## Web UI
 In subproject "web" I implemented a simple web UI based on Apache Wicket for displaying the result of generating a new starting position.
