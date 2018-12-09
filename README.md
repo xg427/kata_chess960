@@ -26,5 +26,8 @@ Valid results could look like one of these examples here:
 * "R Q B N K R N B"
 * "Q N T B B K N R"
 
+## Own solution
+My own solution for the kata explained here you can find in the subproject called "core".
+The purpose of the subproject "web" is to display the resulting starting positions within a web browser later.
 
 [1]: https://en.wikipedia.org/wiki/Chess960 "Wikipedia: Chess960"
