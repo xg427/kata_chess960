@@ -30,4 +30,10 @@ Valid results could look like one of these examples here:
 My own solution for the kata explained here you can find in the subproject called "core".
 The purpose of the subproject "web" is to display the resulting starting positions within a web browser later.
 
+## Web UI
+In subproject "web" I implemented a simple web UI based on Apache Wicket for displaying the result of generating a new starting position.
+
+![screenshot](Screenshot.png)
+
+
 [1]: https://en.wikipedia.org/wiki/Chess960 "Wikipedia: Chess960"
