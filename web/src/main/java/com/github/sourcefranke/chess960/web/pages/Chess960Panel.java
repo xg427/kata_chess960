@@ -18,9 +18,7 @@ public class Chess960Panel extends Panel {
 
 	private static final long serialVersionUID = 1L;
 	
-	private Chess960 chess960 = new Chess960();
-
-	public Chess960Panel(String id) {
+	public Chess960Panel(String id, Chess960 chess960) {
 		super(id);
 		
 		IModel<List<ChessPiece>> piecesModel = new ListModel<>(chess960.generate());

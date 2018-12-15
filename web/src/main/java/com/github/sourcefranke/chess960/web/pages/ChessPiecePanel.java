@@ -1,10 +1,13 @@
 package com.github.sourcefranke.chess960.web.pages;
 
 import org.apache.wicket.AttributeModifier;
+import org.apache.wicket.Component;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.image.Image;
+import org.apache.wicket.markup.html.panel.EmptyPanel;
 import org.apache.wicket.markup.html.panel.Panel;
 import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.Model;
 
 import com.github.sourcefranke.chess960.core.ChessPiece;
 
@@ -14,27 +17,34 @@ public class ChessPiecePanel extends Panel {
 
 	public ChessPiecePanel(String id, IModel<ChessPiece> model, Color color) {
 		super(id, model);
-		
-		String picString = null;
-		
+
+		Component img;
+		String imgId = "piece";
 		switch (model.getObject()) {
 			case KING:
-				picString = "king.svg.png";
+				img = new Image(imgId, Model.of("king.svg.png"));
 				break;
+				
 			case QUEEN:
-				picString = "queen.svg.png";
+				img = new Image(imgId, Model.of("queen.svg.png"));
 				break;
+				
 			case ROOK:
-				picString = "rook.svg.png";
+				img = new Image(imgId, Model.of("rook.svg.png"));
 				break;
+				
 			case KNIGHT:
-				picString = "knight.svg.png";
+				img = new Image(imgId, Model.of("knight.svg.png"));
 				break;
+				
 			case BISHOP:
-				picString = "bishop.svg.png";
+				img = new Image(imgId, Model.of("bishop.svg.png"));
 				break;
+				
+			default:
+				img = new Image(imgId, Model.of("blank.svg.png"));
 		}
-		Image img = new Image("piece", picString);
+
 		img.add(new AttributeModifier("height", "50px"));
 		img.add(new AttributeModifier("width", "50px"));
 		

@@ -13,6 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
+import com.github.sourcefranke.chess960.core.rules.Rule;
 import com.github.sourcefranke.chess960.core.rules.RuleSet;
 
 /**
@@ -24,7 +25,7 @@ public class Chess960 implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 
-	private RuleSet ruleSet;
+	private Rule ruleSet;
 
 	private List<ChessPiece> setOfPieces;
 	
@@ -40,7 +41,7 @@ public class Chess960 implements Serializable {
 	 * 
 	 * @param ruleSet custom set of restrictions for starting positions allowed
 	 */
-	public Chess960(RuleSet ruleSet) {
+	public Chess960(Rule ruleSet) {
 		this(ruleSet, Arrays.asList(KING, QUEEN, ROOK, ROOK, KNIGHT, KNIGHT, BISHOP, BISHOP));
 	}
 
@@ -50,7 +51,7 @@ public class Chess960 implements Serializable {
 	 * @param ruleSet custom set of restrictions for starting positions allowed
 	 * @param setOfPieces custom set of pieces
 	 */
-	public Chess960(RuleSet ruleSet, List<ChessPiece> setOfPieces) {
+	public Chess960(Rule ruleSet, List<ChessPiece> setOfPieces) {
 		this.ruleSet = ruleSet;
 		this.setOfPieces = setOfPieces;
 	}

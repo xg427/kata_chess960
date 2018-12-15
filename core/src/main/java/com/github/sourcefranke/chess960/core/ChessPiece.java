@@ -7,7 +7,7 @@ package com.github.sourcefranke.chess960.core;
  */
 public enum ChessPiece {
 	
-	KING('K'), QUEEN('Q'), ROOK('R'), KNIGHT('N'), BISHOP('B');
+	KING('K'), QUEEN('Q'), ROOK('R'), KNIGHT('N'), BISHOP('B'), EMPTY(' ');
 	
 	private char symbol;
 	
