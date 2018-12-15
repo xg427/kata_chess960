@@ -4,6 +4,9 @@ This is a proposal for a new kata to be introduced. It's about [Chess960][1], a 
 ## About the Kata
 The kata is about implementing an algorithm to return a valid starting position for a Chess960 game. Each time the implementation is called, some different position out of the 960 possibilities should be returned.
 
+![screenshot](complete.png)
+
+
 ## Rules for starting position
 
 ### King and Rooks
@@ -45,8 +48,6 @@ It is open for adding more rules or removing one of the existing rules easily.
 
 ## Web UI
 In subproject "web" I implemented a simple web UI based on Apache Wicket for displaying the result of generating a new starting position.
-
-![screenshot](complete.png)
 
 
 [1]: https://en.wikipedia.org/wiki/Chess960 "Wikipedia: Chess960"
