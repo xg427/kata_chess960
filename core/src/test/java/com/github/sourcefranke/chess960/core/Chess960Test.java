@@ -6,8 +6,6 @@ import static com.github.sourcefranke.chess960.core.ChessPiece.KNIGHT;
 import static com.github.sourcefranke.chess960.core.ChessPiece.QUEEN;
 import static com.github.sourcefranke.chess960.core.ChessPiece.ROOK;
 
-import java.util.List;
-
 import org.eclipse.collections.api.list.MutableList;
 import org.eclipse.collections.impl.list.mutable.ListAdapter;
 import org.junit.Assert;
@@ -35,7 +33,7 @@ public class Chess960Test {
 	
 	@Test
 	public void test() {
-		Mockito.when(ruleSet.validate(Mockito.any(List.class))).thenReturn(true);
+		Mockito.when(ruleSet.validate(Mockito.anyList())).thenReturn(true);
 		
 		MutableList<ChessPiece> position = ListAdapter.adapt(chess960.generate());
 		

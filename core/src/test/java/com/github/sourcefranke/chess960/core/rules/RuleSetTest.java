@@ -56,6 +56,8 @@ public class RuleSetTest {
 	
 	private class TrueRule implements Rule {
 
+		private static final long serialVersionUID = 1L;
+
 		@Override
 		public boolean validate(List<ChessPiece> position) {
 			return true;
@@ -63,6 +65,8 @@ public class RuleSetTest {
 	}
 	
 	private class FalseRule implements Rule {
+
+		private static final long serialVersionUID = 1L;
 
 		@Override
 		public boolean validate(List<ChessPiece> position) {
