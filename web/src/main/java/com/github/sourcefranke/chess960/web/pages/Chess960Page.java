@@ -1,20 +1,23 @@
 package com.github.sourcefranke.chess960.web.pages;
 
+import static com.github.sourcefranke.chess960.core.ChessPiece.BISHOP;
+import static com.github.sourcefranke.chess960.core.ChessPiece.EMPTY;
+import static com.github.sourcefranke.chess960.core.ChessPiece.KING;
+import static com.github.sourcefranke.chess960.core.ChessPiece.KNIGHT;
+import static com.github.sourcefranke.chess960.core.ChessPiece.QUEEN;
+import static com.github.sourcefranke.chess960.core.ChessPiece.ROOK;
+
 import java.util.Arrays;
 import java.util.List;
 
 import org.apache.wicket.markup.html.WebPage;
 
-import com.giffing.wicket.spring.boot.context.scan.WicketHomePage;
 import com.github.sourcefranke.chess960.core.Chess960;
 import com.github.sourcefranke.chess960.core.ChessPiece;
 import com.github.sourcefranke.chess960.core.rules.BishopsDifferentColorRule;
 import com.github.sourcefranke.chess960.core.rules.KingBetweenRooksRule;
 import com.github.sourcefranke.chess960.core.rules.Rule;
 
-import static com.github.sourcefranke.chess960.core.ChessPiece.*;
-
-@WicketHomePage
 public class Chess960Page extends WebPage {
 
 	private static final long serialVersionUID = 1L;
